@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pick a time</title>
+    <link rel="stylesheet" href="./styles/time-picker.css">
+    <link rel="stylesheet" href="./styles/time-picker-button.css">
+  </head>
+  <body>
+    <div class="time-form">
+      <h3>Pick a time!</h3>
+      <input 
+        type="text"
+        name="time" value=""  
+        placeholder="Set Time" 
+        required 
+        onkeyup="formatInputValue(event)"
+        maxlength="5"
+      >
+      <div class="time-picker-container">
+        <header>
+          Time-Picker
+        </header>
+        <div class="hours">
+          <h3 class = "prev" onclick="showChangeButtons(event)"> 12 </h3>
+          <h4 class= "current"> 00 </h4>
+          <h3 class="next" onclick="showChangeButtons(event)"> 01 </h3>
+        </div>
+        <div class="colon">
+          <h3 class = "prev"></h3>
+          <h4 class= "current">:</h4>
+          <h3 class="next"></h3>
+        </div>
+        <div class="minutes">
+          <h3 class = "prev" onclick="showChangeButtons(event)"> 59 </h3>
+          <h4 class= "current"> 00 </h4>
+          <h3 class="next" onclick="showChangeButtons(event)"> 01 </h3>
+        </div>
+        <div class="colon">
+          <h3 class = "prev"></h3>
+          <h4 class= "current">:</h4>
+          <h3 class="next"></h3>
+        </div>
+        <div class="ampm">
+          <h3 class = "prev" onclick="showChangeButtons(event)"> pm </h3>
+          <h4 class= "current"> am </h4>
+        </div>
+        <div class="controls">
+          <button type="button" name="button"> Set</button>
+          <button type="button" name="button"> Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/time-picker.js" charset="utf-8"></script>
+  <script src="./scripts/app.js" charset="utf-8"></script>
+</html>

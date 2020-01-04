@@ -1,0 +1,16 @@
+.controls button{
+    height: 100%;
+    width: 50%;
+    border: none;
+    background: none;
+    float: left;
+    background: #32b3b7;
+    color:white;
+    font-size: 16px;
+  }
+  .controls button:hover{
+    background: white;
+    color:black;
+    box-shadow: 0 0 8px rgba(57, 57, 62, 0.14);
+  }
+  

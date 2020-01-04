@@ -1,0 +1,114 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*color:red;*/
+}
+
+/*Styling the inout like paytm*/
+
+input {
+  margin: 10px auto;
+  width: 300px;
+  height: 50px;
+  /*line-height: 40px;*/
+  display: block;
+  border: none;
+  /*padding: 10px 0;*/
+  border-bottom: solid 1px #2C3E50;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #2C3E50 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2C3E50 4%);
+  background-position: -300px 0;
+  background-size:300px 100%;
+  background-repeat: no-repeat;
+  color: #2C3E50;
+  font-size: 15px;
+}
+
+input:focus, input:valid {
+ box-shadow: none;
+ outline: none;
+ background-position: 0 0;
+}
+
+input::-webkit-input-placeholder {
+ /*font-family: 'roboto', sans-serif;*/
+ -webkit-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+ color: #32b3b7;
+}
+
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+ color: #32b3b7;
+ font-size: 11px;
+ -webkit-transform: translateY(-20px);
+ transform: translateY(-20px);
+ visibility: visible !important;
+}
+
+/*Input styles over*/
+
+div.time-form{
+  margin: 30px auto;
+  width: 500px;
+  height: 500px;
+}
+
+.time-picker-container{
+  height: 200px;
+  width: 300px;
+  background-color: rgba(230, 230, 250, 0.31);
+  margin: -5px auto;
+  box-shadow: inset 0 0 8px #e4e4e4;
+  color:#32b3b7;
+}
+div.time-picker-container div.hours, div.time-picker-container div.minutes, div.time-picker-container div.ampm{
+  text-align: center;
+  height: 60%;
+  line-height: 60px;
+  width: 28%;
+  /*background: silver;*/
+  float: left;
+}
+div.colon{
+  text-align: center;
+  height: 60%;
+  line-height: 60px;
+  width: 8%;
+  /*background: silver;*/
+  float: left;
+}
+div.time-picker-container header, div.time-picker-container div.controls{
+  text-align: center;
+  height: 20%;
+  line-height: 40px;
+  width: 100%;
+  /*background: silver;*/
+  float: left;
+}
+div.time-picker-container header{
+  font-weight: bold;
+  background: #32b3b7;
+  color: white;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  font-size: large;
+  font-family: sans-serif;
+}
+.prev, .next{
+  height: 25%;
+  width: 100%;
+  /*background: azure;*/
+  float: left;
+  line-height: 30px;
+  color: rgba(50, 179, 183, 0.33);
+}
+.current{
+  height: 50%;
+  width: 100%;
+  /*background: beige;*/
+  float: left;
+  font-size: xx-large;
+}

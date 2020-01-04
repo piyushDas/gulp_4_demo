@@ -1,0 +1,23 @@
+{
+  "name": "sid_chu_gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "Piyush Das",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-uglify": "^3.0.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
